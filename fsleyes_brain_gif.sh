@@ -26,7 +26,7 @@ echo "generating gif"
 convert -delay 10 -loop 0 -transparent black -trim -dispose previous  *.png tmp_movie.gif
 
 #make cycle patrol (goes back and forth)
-magick tmp_movie.gif -coalesce -duplicate 1,-2-1 -quiet -layers OptimizePlus -loop 0 my_brain_on_coffee.gif 
+magick tmp_movie.gif -coalesce -duplicate 1,-2-1 -quiet -layers OptimizePlus -loop 0 Francesca_Morfini_my_brain_gif.gif 
 
 mkdir allframes
 mv *png tmp* allframes
